@@ -123,4 +123,10 @@ return [
         'store' => env('APP_MAINTENANCE_STORE', 'database'),
     ],
 
+    /*
+     * Storage type to decide which storage to show
+     */
+
+    'storage_type' => env('STORAGE_TYPE', 'physical'),
+
 ];
