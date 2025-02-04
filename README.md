@@ -11,6 +11,10 @@ A simple Laravel-based storage management system that lists and categorizes diff
 ```sh
 git clone https://github.com/feherdominik97/storage-manager.git
 cd storage-manager
+cp .env.example .env
+```
+Now set STORAGE_TYPE to webshop or the default is physical.
+```sh
 composer install
 php artisan migrate --seed
 php artisan serve
