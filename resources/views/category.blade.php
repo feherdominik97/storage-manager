@@ -9,7 +9,9 @@
     <h1>Products in {{ $category['name'] }}</h1>
     <ul>
         @foreach ($products as $product)
-            <li>{{ $product['name'] }} - ${{ number_format($product['price'], 2) }}</li>
+            <li>
+                <a href="{{ route('product.show', $product['id']) }}"> {{ $product['name'] }} - ${{ number_format($product['price'], 2) }} </a>
+            </li>
         @endforeach
     </ul>
     <a href="{{ route('home') }}">Back to Categories</a>
